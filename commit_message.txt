@@ -1,0 +1,11 @@
+Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | WIP(init): Initial commit: basic README and project description
+
+Created minimal initial README to establish the repository with basic project information.
+This is the foundational commit establishing the project structure and purpose.
+Every project starts with a README - this provides the essential project context before
+adding configuration files and analysis results.
+
+Files created:
+- README.md: Basic project description
+
+Verified: Repository initialized successfully with README content.
