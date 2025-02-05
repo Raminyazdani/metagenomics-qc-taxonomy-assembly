@@ -1,0 +1,14 @@
+# Offloaded large files (see LARGE_FILES.md)
+data/ERR688365.fastq
+
+# Temporary files
+*.tmp
+~$*.docx
+
+# Python cache
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db
