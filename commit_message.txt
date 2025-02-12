@@ -1,12 +1,11 @@
-Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | WIP(config): Add .gitignore and document large file storage approach
+Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | feat(qc): Add FastQC quality control results
 
-Added essential repository configuration to handle large bioinformatics data files.
-The .gitignore ensures large sequencing files (220 MB) won't be accidentally committed
-to Git. LARGE_FILES.md documents the external storage approach and provides access
-instructions for the input sequencing data.
+Added quality control results from FastQC analysis of metagenomic sequencing data.
+This is the first pipeline stage - quality control must pass before proceeding with
+downstream analysis. FastQC assessed read quality, GC content, sequence duplication,
+and potential contamination of the ERR688365.fastq sample.
 
 Files created:
-- .gitignore: Ignore large data files (FASTQ) and temporary files
-- LARGE_FILES.md: Document external data storage approach
+- Results/FastQC_on_data_1__Webpage.zip: FastQC HTML report with quality metrics
 
-Verified: Configuration files in place, large file handling documented.
+Verified: QC passed, reads are suitable for downstream metagenomic analysis.
