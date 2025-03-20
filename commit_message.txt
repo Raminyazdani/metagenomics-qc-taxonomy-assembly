@@ -1,11 +1,11 @@
-Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | feat(taxonomy): Add MetaPhlAn taxonomic profiling - tabular output
+Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | WIP(taxonomy): Export MetaPhlAn results to Excel format for easier viewing
 
-Added taxonomic profiling results from MetaPhlAn analysis. This is the second pipeline
-stage - determining what organisms are present in the metagenomic sample. MetaPhlAn
-identifies microbial taxa and their relative abundances using marker genes. Started
-with the standard tabular output format which is the primary MetaPhlAn output.
+Converted taxonomic profiling results to Excel format for easier viewing and sharing.
+After generating the tabular results, exported them to Excel format for collaborators
+who prefer spreadsheet tools over plain text tables. This improves accessibility of
+the taxonomic composition data.
 
 Files created:
-- Results/metaphlan_result.tabular: Taxonomic composition in tabular format
+- Results/metaphlan.xlsx: Taxonomic composition in Excel format
 
-Verified: Taxonomic composition successfully identified with abundance estimates.
+Verified: Excel format correctly represents the tabular data with proper formatting.
