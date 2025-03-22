@@ -1,11 +1,12 @@
-Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | WIP(taxonomy): Export MetaPhlAn results to Excel format for easier viewing
+Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | feat(assembly): Add MEGAHIT de novo assembly results
 
-Converted taxonomic profiling results to Excel format for easier viewing and sharing.
-After generating the tabular results, exported them to Excel format for collaborators
-who prefer spreadsheet tools over plain text tables. This improves accessibility of
-the taxonomic composition data.
+Added de novo assembly results from MEGAHIT. This is the third pipeline stage -
+reconstructing longer genomic sequences (contigs) from short sequencing reads.
+Assembly is critical for downstream gene prediction and annotation. MEGAHIT is
+optimized for metagenome assembly and the run completed successfully after several
+hours of computation.
 
 Files created:
-- Results/metaphlan.xlsx: Taxonomic composition in Excel format
+- Results/megahit_result.fasta: Assembled contigs
 
-Verified: Excel format correctly represents the tabular data with proper formatting.
+Verified: Assembly produced high-quality contigs suitable for gene prediction.
