@@ -1,12 +1,11 @@
-Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | feat(assembly): Add MEGAHIT de novo assembly results
+Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | feat(genes): Add GeneMarkS gene prediction results
 
-Added de novo assembly results from MEGAHIT. This is the third pipeline stage -
-reconstructing longer genomic sequences (contigs) from short sequencing reads.
-Assembly is critical for downstream gene prediction and annotation. MEGAHIT is
-optimized for metagenome assembly and the run completed successfully after several
-hours of computation.
+Added gene prediction results from GeneMarkS. This is the fourth pipeline stage -
+identifying protein-coding genes from assembled contigs. Started by committing the
+main output file which contains gene coordinates and prediction metadata. GeneMarkS
+is specialized for prokaryotic gene prediction and is ideal for metagenomic data.
 
 Files created:
-- Results/megahit_result.fasta: Assembled contigs
+- Results/gmhmmp.20240724.053709.682348.gmhmmp.out.txt: GeneMarkS output with coordinates
 
-Verified: Assembly produced high-quality contigs suitable for gene prediction.
+Verified: Gene prediction completed successfully with high-confidence predictions.
