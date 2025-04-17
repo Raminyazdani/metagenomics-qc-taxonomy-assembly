@@ -1,11 +1,13 @@
-Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | feat(genes): Add GeneMarkS gene prediction results
+Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | WIP(genes): Add predicted gene and protein sequences from GeneMarkS
 
-Added gene prediction results from GeneMarkS. This is the fourth pipeline stage -
-identifying protein-coding genes from assembled contigs. Started by committing the
-main output file which contains gene coordinates and prediction metadata. GeneMarkS
-is specialized for prokaryotic gene prediction and is ideal for metagenomic data.
+Added gene and protein sequence files from GeneMarkS output. After the initial run
+completed, added the sequence files (nucleotide and amino acid). These are needed
+for downstream functional annotation via BLAST. Committing them separately makes
+sense as they're distinct outputs serving different purposes - nucleotides for gene
+analysis and amino acids for protein function annotation.
 
 Files created:
-- Results/gmhmmp.20240724.053709.682348.gmhmmp.out.txt: GeneMarkS output with coordinates
+- Results/gmhmmp.20240724.053709.682348.gmhmmp.out.fnn.txt: Predicted genes (nucleotide)
+- Results/gmhmmp.20240724.053709.682348.gmhmmp.out.faa.txt: Predicted proteins (amino acid)
 
-Verified: Gene prediction completed successfully with high-confidence predictions.
+Verified: Sequence files contain valid FASTA-formatted predictions ready for BLAST.
