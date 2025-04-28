@@ -1,13 +1,12 @@
-Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | WIP(genes): Add predicted gene and protein sequences from GeneMarkS
+Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | WIP(annotation): Prepare representative sequences for BLAST analysis
 
-Added gene and protein sequence files from GeneMarkS output. After the initial run
-completed, added the sequence files (nucleotide and amino acid). These are needed
-for downstream functional annotation via BLAST. Committing them separately makes
-sense as they're distinct outputs serving different purposes - nucleotides for gene
-analysis and amino acids for protein function annotation.
+Prepared representative sequences for functional annotation via BLAST. Selected
+a representative subset of predicted genes to query against protein databases.
+Not all genes need to be BLASTed due to computational cost and time constraints -
+selected representative sequences covering diverse gene families for efficient
+functional characterization.
 
 Files created:
-- Results/gmhmmp.20240724.053709.682348.gmhmmp.out.fnn.txt: Predicted genes (nucleotide)
-- Results/gmhmmp.20240724.053709.682348.gmhmmp.out.faa.txt: Predicted proteins (amino acid)
+- Results/blastx_inputs.fasta: Selected sequences for BLAST functional annotation
 
-Verified: Sequence files contain valid FASTA-formatted predictions ready for BLAST.
+Verified: Input sequences properly formatted and ready for BLAST queries.
