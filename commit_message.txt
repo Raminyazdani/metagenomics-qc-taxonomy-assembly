@@ -1,12 +1,13 @@
-Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | WIP(annotation): Prepare representative sequences for BLAST analysis
+Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | feat(annotation): Add BLAST functional annotation results
 
-Prepared representative sequences for functional annotation via BLAST. Selected
-a representative subset of predicted genes to query against protein databases.
-Not all genes need to be BLASTed due to computational cost and time constraints -
-selected representative sequences covering diverse gene families for efficient
-functional characterization.
+Added BLAST functional annotation results. This is the fifth pipeline stage -
+identifying protein homologs and assigning functions to predicted genes. BLAST
+searches against the NCBI nr database identify similar proteins with known functions.
+Started with standard tabular output formats which are most commonly used for
+downstream analysis. BLAST queries took several hours to complete.
 
 Files created:
-- Results/blastx_inputs.fasta: Selected sequences for BLAST functional annotation
+- Results/blastx_results.txt: BLASTX results in tabular format
+- Results/blast_result.txt: Alternative BLAST output format
 
-Verified: Input sequences properly formatted and ready for BLAST queries.
+Verified: BLAST completed successfully with functional annotations for query sequences.
