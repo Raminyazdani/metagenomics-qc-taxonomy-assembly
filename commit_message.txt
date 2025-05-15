@@ -1,13 +1,12 @@
-Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | feat(annotation): Add BLAST functional annotation results
+Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | WIP(annotation): Export BLAST results in JSON format and summary
 
-Added BLAST functional annotation results. This is the fifth pipeline stage -
-identifying protein homologs and assigning functions to predicted genes. BLAST
-searches against the NCBI nr database identify similar proteins with known functions.
-Started with standard tabular output formats which are most commonly used for
-downstream analysis. BLAST queries took several hours to complete.
+Added BLAST results in additional formats for different use cases. After completing
+the BLAST run, exported results in JSON format for programmatic access and integration
+with other tools. Added a summary file for quick reference of annotation statistics.
+Multiple output formats improve the utility of the functional annotation results.
 
 Files created:
-- Results/blastx_results.txt: BLASTX results in tabular format
-- Results/blast_result.txt: Alternative BLAST output format
+- Results/blast_result.json: BLAST results in JSON format
+- Results/results.out: Summary output file
 
-Verified: BLAST completed successfully with functional annotations for query sequences.
+Verified: JSON format valid and parseable, summary contains accurate statistics.
