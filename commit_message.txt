@@ -1,14 +1,12 @@
-Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | WIP(docs): Update README with data file information
+Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | WIP(docs): Fix: correct data file path in README
 
-Updated README to document the input data location. Attempted to improve documentation
-by adding information about where the input sequencing data is located. This helps
-users understand the data dependencies and how to obtain the required input files.
-
-OOPS: Made a typo in the directory path - typed data/sequences/ERR688365.fastq
-instead of the correct data/ERR688365.fastq. Added an extra subdirectory that
-doesn't actually exist in the repository structure.
+HOTFIX: Corrected the data file path error from the previous commit. When verifying
+the documented path, realized that data/sequences/ doesn't exist - the file is
+directly under data/. Changed from data/sequences/ERR688365.fastq to the correct
+data/ERR688365.fastq. Also improved the documentation by adding a reference to
+LARGE_FILES.md which contains the actual access link.
 
 Files modified:
-- README.md: Added data file location (with incorrect path)
+- README.md: Corrected data file path and added LARGE_FILES.md reference
 
-Note: This error will be fixed in the next commit.
+Verified: Path now correctly points to data/ERR688365.fastq as documented in LARGE_FILES.md.

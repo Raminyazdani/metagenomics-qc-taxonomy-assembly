@@ -10,7 +10,7 @@ Metagenomic analysis pipeline for processing sequencing reads through quality co
 
 ## Data Files
 
-Input data is located at: `data/sequences/ERR688365.fastq` (WRONG PATH - actual is `data/ERR688365.fastq`)
+Input data is located at: `data/ERR688365.fastq` (see LARGE_FILES.md for access)
 
 ## Results
 
