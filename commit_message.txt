@@ -1,12 +1,14 @@
-Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | feat(docs): Add detailed project report with methods and results
+Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | feat(docs): Enhance README with complete pipeline documentation and reproducibility notes
 
-Added comprehensive analysis report documenting the complete workflow. After all
-analysis stages completed, created a formal report suitable for academic or
-professional presentation. The report includes detailed methodology, results from
-each pipeline stage, biological interpretation of findings, and conclusions.
+Significantly enhanced README with comprehensive documentation for reproducibility.
+After completing all analysis stages, improved documentation to be thorough and
+useful for others wanting to reproduce or understand the workflow. Added detailed
+sections covering the complete tech stack with tool descriptions, step-by-step
+pipeline workflow with commands, system requirements and prerequisites, installation
+instructions for all tools, troubleshooting common issues, and citations for all
+tools used.
 
-Files created:
-- report.docx: Detailed project report with comprehensive methods, results, and interpretation
-- ~$report.docx: Word temporary file (auto-generated during editing)
+Files modified:
+- README.md: Comprehensive update with all pipeline stages and reproducibility information
 
-Verified: Report contains complete documentation of all analysis stages and findings.
+Verified: README now provides complete guidance for understanding and reproducing the analysis.
