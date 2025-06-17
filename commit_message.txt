@@ -1,14 +1,15 @@
-Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | feat(docs): Enhance README with complete pipeline documentation and reproducibility notes
+Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | WIP(portfolio): Add professional project identity and portfolio tracking
 
-Significantly enhanced README with comprehensive documentation for reproducibility.
-After completing all analysis stages, improved documentation to be thorough and
-useful for others wanting to reproduce or understand the workflow. Added detailed
-sections covering the complete tech stack with tool descriptions, step-by-step
-pipeline workflow with commands, system requirements and prerequisites, installation
-instructions for all tools, troubleshooting common issues, and citations for all
-tools used.
+Preparing repository for portfolio use. Established professional project identity
+separate from the README to define display title, tagline, stack, and problem/approach.
+Created systematic tracking files to document the transformation from research project
+to portfolio piece. These files enable transparent tracking of all changes made during
+portfolio preparation.
 
-Files modified:
-- README.md: Comprehensive update with all pipeline stages and reproducibility information
+Files created:
+- project_identity.md: Professional project framing
+- report.md: Portfolio readiness tracking report
+- suggestion.txt: Issue tracking ledger (TAB-separated format)
+- suggestions_done.txt: Change tracking ledger with before/after snippets
 
-Verified: README now provides complete guidance for understanding and reproducing the analysis.
+Verified: Portfolio tracking infrastructure in place for systematic transformation.
