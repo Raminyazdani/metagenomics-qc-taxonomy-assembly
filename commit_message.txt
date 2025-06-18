@@ -1,15 +1,25 @@
-Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | WIP(portfolio): Add professional project identity and portfolio tracking
+Ramin Yazdani | Metagenomics QC-Taxonomy-Assembly Pipeline | main | feat(portfolio): Portfolio ready: remove academic traces, professional documentation
 
-Preparing repository for portfolio use. Established professional project identity
-separate from the README to define display title, tagline, stack, and problem/approach.
-Created systematic tracking files to document the transformation from research project
-to portfolio piece. These files enable transparent tracking of all changes made during
-portfolio preparation.
+Final portfolio transformation to remove all academic traces and reframe as professional
+bioinformatics project suitable for portfolio display. Removed all academic context
+markers ("University Project", assignment language) and converted to professional
+active voice throughout. Emphasized practical reproducibility and real-world application
+while maintaining scientific accuracy. Made it clear this is a results repository with
+example outputs. Added comprehensive citations respecting tool authors.
 
-Files created:
-- project_identity.md: Professional project framing
-- report.md: Portfolio readiness tracking report
-- suggestion.txt: Issue tracking ledger (TAB-separated format)
-- suggestions_done.txt: Change tracking ledger with before/after snippets
+Key changes:
+- Removed "University Project" label from README
+- Rewrote with professional active voice and framing
+- Enhanced with comprehensive system requirements, prerequisites, and citations
+- Reorganized into portfolio-appropriate sections
+- Clarified pre-generated results nature (not runnable scripts)
+- Added license section and tool acknowledgments
+- Completed all tracking files (report.md, suggestion.txt, suggestions_done.txt)
 
-Verified: Portfolio tracking infrastructure in place for systematic transformation.
+Files modified:
+- README.md: Complete professional overhaul
+- report.md: Completed portfolio readiness tracking
+- suggestion.txt: All issues documented and marked APPLIED
+- suggestions_done.txt: All changes logged with before/after snippets
+
+Verified: Repository is now portfolio-ready with no academic traces remaining.

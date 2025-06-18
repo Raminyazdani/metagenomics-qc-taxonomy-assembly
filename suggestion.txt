@@ -1,1 +1,9 @@
-TYPEFILELOCATORBEFORE_SNIPPETPROPOSED_CHANGERATIONALESTATUS
+TYPE	FILE	LOCATOR	BEFORE_SNIPPET	PROPOSED_CHANGE	RATIONALE	STATUS
+TRACE	README.md	line 3	**Project Type:** University Project	Remove line entirely	Remove academic label to make portfolio-ready	APPLIED
+DOC	README.md	line 1	# Metagenomics Pipeline Analysis	# Metagenomics QC-Taxonomy-Assembly Pipeline	Align title with professional identity	APPLIED
+DOC	README.md	lines 6-8	This is a metagenomics analysis project...	Reframe as professional portfolio project (not "this is")	Remove passive/academic tone, emphasize pipeline value	APPLIED
+DOC	README.md	line 20-39	Folder Structure section	Update to reflect "Repository Structure"	Use portfolio-appropriate terminology	APPLIED
+DOC	README.md	lines 40-81	Setup / Installation section	Enhance with prerequisites and system requirements	Improve reproducibility documentation	APPLIED
+DOC	README.md	lines 83-110	How to Run section	Add note that this is a results repository with example commands	Clarify that repo contains results, not runnable scripts	APPLIED
+DOC	README.md	lines 112-125	Inputs/Outputs section	Enhance clarity about external data and existing results	Make it clear results are already generated	APPLIED
+DOC	README.md	lines 127-141	Notes and Troubleshooting	Update to reflect results-only nature of repo	Align documentation with actual repo contents	APPLIED

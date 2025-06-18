@@ -1,1 +1,11 @@
-FILELOCATORBEFORE_SNIPPETAFTER_SNIPPETNOTES
+FILE	LOCATOR	BEFORE_SNIPPET	AFTER_SNIPPET	NOTES
+README.md	line 3	**Project Type:** University Project	[REMOVED]	Eliminated academic trace - line deleted entirely
+README.md	line 1	# Metagenomics Pipeline Analysis	# Metagenomics QC-Taxonomy-Assembly Pipeline	Aligned title with professional identity
+README.md	lines 1-8	**Project Type:** University Project | **Primary Stack:** Bioinformatics Tools | ## Description | This is a metagenomics analysis project...	**End-to-end metagenomic sequencing analysis pipeline...** | ## Overview | This repository contains the results and documentation...	Removed academic framing, changed to professional active voice
+README.md	lines 10-18	## Tech Stack | - FastQC (quality control) | - MetaPhlAn (taxonomic profiling)...	## Tech Stack | **Bioinformatics Tools:** | - **FastQC** - Quality control and read assessment...	Enhanced tool descriptions with clear roles
+README.md	lines 20-39	## Folder Structure | metagenomics/ | ├── data/...	## Repository Structure | This repository contains **pre-generated analysis results**... | metagenomics-qc-taxonomy-assembly/...	Changed to "Repository Structure", clarified pre-generated results, updated folder name
+README.md	lines 40-81	## Setup / Installation | ### Install Required Tools	## Pipeline Workflow | The analysis follows this sequential workflow... | ## Reproducibility | To reproduce this analysis...	Reorganized to show workflow first, then reproducibility; added system requirements and prerequisites
+README.md	lines 83-110	## How to Run | The pipeline can be run step by step...	[INTEGRATED INTO PIPELINE WORKFLOW SECTION]	Combined workflow and execution into single cohesive section
+README.md	lines 112-125	## Inputs/Outputs | **Inputs:** | - `data/ERR688365.fastq` - Metagenomic sequencing reads...	## Analysis Results | This repository contains results from analyzing the **ERR688365** metagenomic sample... | [TABLE FORMAT]	Changed to "Analysis Results", added table format, emphasized pre-generated nature
+README.md	lines 127-141	## Notes | - This is a complete metagenomics analysis pipeline...	## Key Findings | The analysis revealed... | ## Troubleshooting | **MetaPhlAn database not found:**...	Split into Key Findings + enhanced Troubleshooting; removed redundant notes
+README.md	end	[NONE]	## Citation & Acknowledgments | If you use this pipeline... | ## License | This project is provided as-is...	Added citations for all tools and license section
