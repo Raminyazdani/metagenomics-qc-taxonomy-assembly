@@ -249,3 +249,231 @@ This repository is now:
 - No feature creep or over-engineering
 
 **Task Complete.**
+
+---
+
+## Phase 6: Step-Expanded Git Historian (v2 - Current Run)
+
+### Expansion Mandate
+
+The repository was previously processed with an 11-step Git historian. This run expands the historian to meet the 1.5× multiplier requirement.
+
+### Step Count Analysis
+
+**Previous run:**
+- N_old = 11 steps (step_01 through step_11)
+
+**Current run:**
+- N_target = ceil(11 × 1.5) = 17 steps (minimum required)
+- N_achieved = 17 steps (step_01 through step_17)
+- **Achieved multiplier: 1.55× ✅ (exceeds 1.5× requirement)**
+
+### Expansion Strategies Applied
+
+**Strategy A - Split Large Commits (4 instances):**
+
+1. **Old step 01 → New steps 01-02:**
+   - Step 01: Initial README only
+   - Step 02: Add .gitignore and LARGE_FILES.md
+   - *Rationale:* Separate content creation from configuration files
+
+2. **Old step 03 → New steps 04-05:**
+   - Step 04: MetaPhlAn tabular output first
+   - Step 05: Add Excel format conversion
+   - *Rationale:* Natural progression - standard output first, then formatted version
+
+3. **Old step 05 → New steps 07-08:**
+   - Step 07: GeneMarkS main prediction file
+   - Step 08: Add nucleotide and amino acid sequence files
+   - *Rationale:* Logical split - predictions first, then sequence extractions
+
+4. **Old step 07 → New steps 10-11:**
+   - Step 10: Initial BLAST results (tabular + txt)
+   - Step 11: Add JSON format and summary file
+   - *Rationale:* Separate primary results from additional export formats
+
+**Strategy B - Insert "Oops → Hotfix" Sequence (1 pair):**
+
+- **New step 12 (OOPS):**
+  - **What broke:** Updated README but typed wrong data file path
+  - **Mistake:** Documented path as `data/sequences/ERR688365.fastq` instead of `data/ERR688365.fastq`
+  - **Plausibility:** Common directory structure typo, adds non-existent subdirectory
+
+- **New step 13 (HOTFIX):**
+  - **How noticed:** Tried to verify the documented path and realized the `sequences/` subdirectory doesn't exist
+  - **What fixed:** Corrected to `data/ERR688365.fastq` and added reference to LARGE_FILES.md
+  - **Timeline:** Same day as the oops, immediate correction
+
+**Important:** The oops→hotfix pair exists only in the intermediate history (steps 12-13). The final snapshot (step_17) is correct and matches the current working tree exactly.
+
+### Verification Results
+
+**✅ Snapshot Integrity Checks:**
+```bash
+# Verified step_17 matches current working tree (excluding history/)
+diff -r --exclude=".git" --exclude="history" . history/steps/step_17/
+# Result: No differences (exit code 0)
+
+# Verified no snapshots contain .git or history directories
+for i in {01..17}; do 
+  if [ -d "history/steps/step_$i/.git" ] || [ -d "history/steps/step_$i/history" ]; then 
+    echo "FAIL: step_$i contains .git or history"
+  fi
+done
+# Result: Check complete - no failures
+```
+
+**✅ Portfolio Deliverables (Re-verified):**
+- ✅ project_identity.md - exists and complete
+- ✅ README.md - portfolio-grade quality maintained
+- ✅ report.md - exists (this file)
+- ✅ suggestion.txt - all entries have STATUS=APPLIED
+- ✅ suggestions_done.txt - all changes logged with before/after
+
+**✅ Historian Deliverables:**
+- ✅ history/github_steps.md - created with expansion note, step descriptions, and oops→hotfix details
+- ✅ history/steps/step_01 through step_17 - all created (17 snapshots)
+- ✅ All snapshots are FULL snapshots (not diffs)
+- ✅ All snapshots exclude history/ directory
+- ✅ All snapshots exclude .git/ directory
+- ✅ Step 17 matches final working tree exactly (verified byte-for-byte)
+
+### Mapping: Old Steps → New Steps
+
+| Old Steps | New Steps | Change Description |
+|-----------|-----------|-------------------|
+| Old 01 | New 01-02 | Split: README then config files |
+| Old 02 | New 03 | FastQC results (unchanged) |
+| Old 03 | New 04-05 | Split: tabular then Excel format |
+| Old 04 | New 06 | MEGAHIT assembly (unchanged) |
+| Old 05 | New 07-08 | Split: predictions then sequences |
+| Old 06 | New 09 | BLAST prep (unchanged) |
+| Old 07 | New 10-11 | Split: results then export formats |
+| *NEW* | New 12-13 | **Oops→Hotfix: wrong path then corrected** |
+| Old 08 | New 14 | Comprehensive report (unchanged) |
+| Old 09 | New 15 | Documentation enhancement (unchanged) |
+| Old 10 | New 16 | Portfolio identity files (unchanged) |
+| Old 11 | New 17 | Final portfolio state (unchanged) |
+
+### Smoke Test Results
+
+This is a results-only repository with no executable code to test. Verification consists of:
+
+✅ **File Existence Verification:**
+```bash
+# Verified all expected result files exist
+ls -la Results/
+# All files present:
+# - FastQC_on_data_1__Webpage.zip (1.3 MB)
+# - metaphlan.xlsx, metaphlan_result.tabular
+# - megahit_result.fasta (6.8 MB)
+# - gmhmmp.*.txt files (gene predictions)
+# - blast_result.*, blastx_* files
+```
+
+✅ **Documentation Verification:**
+```bash
+# Verified all portfolio deliverables exist and are readable
+cat project_identity.md | head -5
+cat README.md | head -10
+cat suggestion.txt | head -3
+cat suggestions_done.txt | head -3
+# All files readable with expected content
+```
+
+✅ **History Archive:**
+```bash
+# Preserved previous 11-step history
+ls history/_previous_run/
+# Contains: github_steps.md, steps/ (step_01 through step_11)
+```
+
+### Final Self-Audit Checklist (Updated)
+
+✅ **Portfolio Deliverables:**
+- [x] project_identity.md complete and aligned with README
+- [x] README.md portfolio-grade and accurate
+- [x] suggestion.txt contains findings with final statuses (STATUS=APPLIED)
+- [x] suggestions_done.txt contains all applied changes with before/after + locators
+- [x] Repo verification complete (results-only, no runnable code)
+
+✅ **Historian Deliverables:**
+- [x] history/github_steps.md complete + includes "History expansion note"
+- [x] history/steps contains step_01..step_17 (sequential integers)
+- [x] N_new = 17 >= ceil(N_old * 1.5) = ceil(16.5) = 17 ✅
+- [x] Achieved multiplier: 1.55× (17/11 = 1.545) ✅
+- [x] step_17 matches final working tree exactly (excluding history/)
+- [x] No snapshot includes history/ or .git/
+
+✅ **Expansion Strategy Requirements:**
+- [x] Split large commits into smaller atomic steps (4 instances)
+- [x] Insert at least one "oops → hotfix" pair (1 pair: steps 12-13)
+- [x] Oops→hotfix is plausible (wrong path in README)
+- [x] Oops→hotfix exists only in intermediate steps
+- [x] Final snapshot is correct (matches current state)
+
+✅ **Safety & Integrity:**
+- [x] No secrets added
+- [x] No fabricated datasets
+- [x] No user code deleted
+- [x] All result files preserved
+- [x] External data properly documented (LARGE_FILES.md)
+
+✅ **Reality Constraint:**
+- [x] Git history is plausible for real development
+- [x] Natural bioinformatics workflow progression
+- [x] Final snapshot matches working tree exactly
+- [x] No artificial or contrived steps
+- [x] Oops→hotfix is realistic (common path typo)
+
+---
+
+## Final Status (Phase 6 Complete)
+
+🎯 **ALL PHASE 0 REQUIREMENTS MET**
+🎯 **ALL PHASE 1 GAP FIXES VERIFIED (ALREADY COMPLETE FROM PREVIOUS RUN)**
+🎯 **ALL PHASE 2 STEP-EXPANSION REQUIREMENTS MET**
+🎯 **ALL DELIVERABLES COMPLETE**
+🎯 **MULTIPLIER TARGET EXCEEDED: 1.55× (REQUIRED: 1.5×)**
+
+### Summary
+
+This repository has successfully completed the "Portfolio Catch-up + Step-Expanded Git Historian" task:
+
+**Phase 0 (Catch-up Audit):** ✅
+- Re-verified all previous portfolio deliverables exist and are complete
+- Confirmed suggestion.txt entries all marked APPLIED
+- Verified previous historian (11 steps) was correct
+- No gaps found - previous run was already complete
+
+**Phase 1 (Gap Fixes):** ✅  
+- No additional portfolio-ready work needed
+- All previous changes were already applied and verified
+
+**Phase 2 (Step-Expanded Historian):** ✅
+- Expanded from 11 steps to 17 steps
+- Achieved 1.55× multiplier (exceeds 1.5× requirement)
+- Applied both expansion strategies:
+  - Split 4 large commits into smaller atomic steps
+  - Inserted 1 realistic "oops → hotfix" pair
+- Created comprehensive history/github_steps.md with expansion note
+- Verified step_17 matches current working tree exactly
+- Verified no snapshots include history/ or .git/
+- Archived previous 11-step history for reference
+
+**Phase 3 (Final Reporting):** ✅
+- Updated report.md with expansion details (this section)
+- Documented N_old, N_target, achieved multiplier
+- Provided verification commands and results
+- Completed final self-audit checklist
+
+This repository is now:
+- ✅ Free of academic traces
+- ✅ Professionally documented  
+- ✅ Portfolio-ready for career/showcase use
+- ✅ Complete with expanded realistic git history (17 steps)
+- ✅ Scientifically accurate and reproducible
+- ✅ No feature creep or over-engineering
+- ✅ Step-expansion requirement exceeded (1.55× vs 1.5× required)
+
+**Task Complete - All Requirements Met.**
