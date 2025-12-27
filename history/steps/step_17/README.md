@@ -89,10 +89,6 @@ Assigns functional annotations by comparing predicted sequences against referenc
 
 To reproduce this analysis with your own metagenomic data:
 
-## Reproducibility
-
-To reproduce this analysis with your own metagenomic data:
-
 ### Prerequisites
 
 **System Requirements:**
